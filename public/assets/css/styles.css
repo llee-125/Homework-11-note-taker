@@ -5,8 +5,8 @@ body {
   padding: 0;
 }
 
-p {
-  font-size: x-small;
+.navbar-brand {
+  margin-left: 100px;
 }
 
 .save-note {
@@ -15,7 +15,7 @@ p {
 
 .icons i {
   margin-left: 15px;
-  margin-right: 15px;
+  margin-right: 200px;
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -37,7 +37,7 @@ p {
 .note-title {
   height: 50px;
   margin-top: 13px;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .note-title:read-only,

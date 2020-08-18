@@ -1,7 +1,7 @@
 const $noteTitle = $(".note-title");
 const $noteText = $(".note-textarea");
 const $saveNoteBtn = $(".save-note");
-const $newNoteBtn = $(".new-note");
+// const $newNoteBtn = $(".new-note");
 const $noteList = $(".list-container .list-group");
 
 let activeNote = {};
@@ -76,10 +76,10 @@ const handleNoteView = function () {
   renderActiveNote();
 };
 
-const handleNewNoteView = function () {
-  activeNote = {};
-  renderActiveNote();
-};
+// const handleNewNoteView = function () {
+//   activeNote = {};
+//   renderActiveNote();
+// };
 
 const handleRenderSaveBtn = function () {
   if (!$noteTitle.val().trim() || !$noteText.val().trim()) {
@@ -126,7 +126,7 @@ const getAndRenderNotes = () => {
 
 $saveNoteBtn.on("click", handleNoteSave);
 $noteList.on("click", ".list-group-item", handleNoteView);
-$newNoteBtn.on("click", handleNewNoteView);
+// $newNoteBtn.on("click", handleNewNoteView);
 $noteList.on("click", ".delete-note", handleNoteDelete);
 $noteTitle.on("keyup", handleRenderSaveBtn);
 $noteText.on("keyup", handleRenderSaveBtn);
